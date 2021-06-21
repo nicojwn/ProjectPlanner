@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>441</width>
+    <height>299</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_Active_Plan">
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>No Active Plan</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>441</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuActive_Plan">
+     <property name="title">
+      <string>Activate Plan</string>
+     </property>
+     <addaction name="actionNo_Open_Plans"/>
+    </widget>
+    <addaction name="actionCreate_New_Plan"/>
+    <addaction name="actionOpen_Plan"/>
+    <addaction name="separator"/>
+    <addaction name="menuActive_Plan"/>
+    <addaction name="actionEdit_Plan"/>
+    <addaction name="actionExport_Plan"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreate_New_Plan">
+   <property name="text">
+    <string>Create New Plan</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionDelete_Plan">
+   <property name="text">
+    <string>Delete Plan</string>
+   </property>
+  </action>
+  <action name="actionOpen_Plan">
+   <property name="text">
+    <string>Open Plan</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave_Active_Plan">
+   <property name="text">
+    <string>Save Active Plan</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionEdit_Active_Plan">
+   <property name="text">
+    <string>Edit Active Plan</string>
+   </property>
+  </action>
+  <action name="actionList_Open_Plans">
+   <property name="text">
+    <string>List Open Plans</string>
+   </property>
+  </action>
+  <action name="actionProgram_Name">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Program Name</string>
+   </property>
+  </action>
+  <action name="actionProgram_Descriptions">
+   <property name="text">
+    <string>Program Descriptions</string>
+   </property>
+  </action>
+  <action name="actionOutstanding_Ideas">
+   <property name="text">
+    <string>Outstanding Ideas</string>
+   </property>
+  </action>
+  <action name="actionProgram_Aim">
+   <property name="text">
+    <string>Program Aim</string>
+   </property>
+  </action>
+  <action name="actionPackages">
+   <property name="text">
+    <string>Packages</string>
+   </property>
+  </action>
+  <action name="actionClassesName">
+   <property name="text">
+    <string>Name</string>
+   </property>
+  </action>
+  <action name="actionClassesDescription">
+   <property name="text">
+    <string>Description</string>
+   </property>
+  </action>
+  <action name="actionClassesParameters">
+   <property name="text">
+    <string>Parameters</string>
+   </property>
+  </action>
+  <action name="actionClassesInherits">
+   <property name="text">
+    <string>Inherits</string>
+   </property>
+  </action>
+  <action name="actionClassesAttributes">
+   <property name="text">
+    <string>Attributes</string>
+   </property>
+  </action>
+  <action name="actionClassesMethods">
+   <property name="text">
+    <string>Methods</string>
+   </property>
+  </action>
+  <action name="actionMethodsName">
+   <property name="text">
+    <string>Name</string>
+   </property>
+  </action>
+  <action name="actionMethodsDescription">
+   <property name="text">
+    <string>Description</string>
+   </property>
+  </action>
+  <action name="actionMethodsParent_Class">
+   <property name="text">
+    <string>Parent Class</string>
+   </property>
+  </action>
+  <action name="actionMethodsDecorators">
+   <property name="text">
+    <string>Decorators</string>
+   </property>
+  </action>
+  <action name="actionMethodsParameters">
+   <property name="text">
+    <string>Parameters</string>
+   </property>
+  </action>
+  <action name="actionMethodsLocal_Variables">
+   <property name="text">
+    <string>Local Variables</string>
+   </property>
+  </action>
+  <action name="actionMethodsPseudo_Code">
+   <property name="text">
+    <string>Pseudo Code</string>
+   </property>
+  </action>
+  <action name="actionGlobal_Variables">
+   <property name="text">
+    <string>Global Variables</string>
+   </property>
+  </action>
+  <action name="actionFunctionsName">
+   <property name="text">
+    <string>Name</string>
+   </property>
+  </action>
+  <action name="actionFunctionsDescription">
+   <property name="text">
+    <string>Description</string>
+   </property>
+  </action>
+  <action name="actionFunctionsDecorators">
+   <property name="text">
+    <string>Decorators</string>
+   </property>
+  </action>
+  <action name="actionFunctionsParameters">
+   <property name="text">
+    <string>Parameters</string>
+   </property>
+  </action>
+  <action name="actionFunctionsLocal_Variables">
+   <property name="text">
+    <string>Local Variables</string>
+   </property>
+  </action>
+  <action name="actionFunctionsPseudo_Code">
+   <property name="text">
+    <string>Pseudo Code</string>
+   </property>
+  </action>
+  <action name="actionNo_Open_Plans">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>No Open Plans</string>
+   </property>
+  </action>
+  <action name="actionDelete_2">
+   <property name="text">
+    <string>Delete Active Plan</string>
+   </property>
+  </action>
+  <action name="actionEdit_Plan">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Edit Active Plan</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionExport_Plan">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Export Plan</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
